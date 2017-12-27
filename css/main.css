@@ -5,7 +5,9 @@
   box-sizing: border-box;
 }
 
-body{
+/* Estilos para la primera pantalla */
+
+.start{
   background: linear-gradient( rgb(83, 0, 96) 65%, rgb(228, 10, 138));
   height: 100vh;
 }
@@ -21,4 +23,36 @@ body{
  margin-left: auto;
  margin-right: auto;
  margin-top: 40%; 
+}
+
+/* Estilos para la ventana sign up */
+.sign-up{
+  background: url('../assets/imagenes/edificio.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.logo-white img{
+  width: 30%;
+  height: 40%;
+  display: block; 
+  margin-left: auto;
+  margin-right: auto;
+ }
+
+.logo-pink img{
+  width: 50%;
+  height: 50%;
+  display: block; 
+  margin-left: auto;
+  margin-right: auto;
+}
+.margin-row{
+  margin-top:25%;
+}
+
+.font{
+  font-size: 30px;
 }
