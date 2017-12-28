@@ -80,3 +80,12 @@
 .size-button{
   width:60%;
 }
+.margin-lag{
+  margin-bottom: 10%;
+}
+.color-disabled{
+  background-color: #CDCDCE;
+}
+.color-enabled{
+  background-color: rgba(132, 42, 192, 0.842)
+}

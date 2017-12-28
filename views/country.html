@@ -23,43 +23,30 @@
         <hr>
         <div class="row margin-section">
             <div class="col-xs-2">              
-                <div class="dropdown">                   
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        <img src="../assets/imagenes/peru.jpg" alt="peru" class="size-image">
-                        <span class="caret"></span>
-                    </a>                       
-                    <ul class="dropdown-menu">
-                        <li>
-                            <a href="">
-                                <img src="../assets/imagenes/argentina.jpg" alt="argentina" class="size-image">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <img src="../assets/imagenes/brasil.jpg" alt="brasil" class="size-image">
-                            </a>
+                <div class="dropdown">                     
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true" >
+                       <img src="../assets/imagenes/peru.jpg" alt="peru" class="size-image" id="flag-peru">                       
+                       <span class="caret"></span>
+                    </button>
 
-                        </li>
-                        <li>
-                            <a href="">
-                                <img src="../assets/imagenes/ecuador.jpg" alt="ecuador" class="size-image">
-                            </a>
-
-                        </li>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" role="menu">
+                        <li class="margin-lag"> <img src="../assets/imagenes/argentina.jpg" alt="argentina" class="size-image" id="flag-argentina"> </li>
+                        <li class="margin-lag"> <img src="../assets/imagenes/brasil.jpg" alt="brasil" class="size-image" id="flag-brasil"> </li>
+                        <li class="margin-lag"> <img src="../assets/imagenes/ecuador.jpg" alt="ecuador" class="size-image" id="flag-ecuador"> </li>
                     </ul>
                 </div>
             </div>
            <div class="col-xs-10" >
                <div class="margin-input">
-                 <span>50</span>
-                 <input type="number" name="phone" id="number-phone">
+                 <span id="postal">50</span>
+                 <input type="number" name="phone" id="phone" placeholder="ingresa el numero telefonico">
                </div>               
                 <p class="text-center size-p">We'll send a text to verify your phone</p>
            </div>
         </div>
         <div class="row margin-section">
             <div class="col-xs-12">
-                <button type="reset"  class="size-button center-block">next</button>
+                <button type="reset"  class="size-button center-block" disabled id="next-page">next</button>
             </div>
        </div>
     </div>
@@ -72,6 +59,6 @@
 
     <script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
     <script src="../vendors/Bootstrap/js/bootstrap.min.js"></script>
-    <script src="../js/app.js"></script>
+    <script src="../js/contry.js"></script>
 </body>
 </html>
