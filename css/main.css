@@ -98,3 +98,14 @@ input {
   border-bottom: 1px solid green;
   outline: none;
 }
+
+/* Estilos para la ventana end-up */
+.end-img{
+  width: 170px;
+  margin-top: 20%;
+}
+
+.end-background{
+  background: linear-gradient( rgb(83, 0, 96) 65%, rgb(228, 10, 138));
+  height: 100vh;
+}
