@@ -37,6 +37,17 @@ $('#flag-ecuador').click(function () {
 
     });
 
+//Funcionalidad para generar codigo aleatorio
+
+$('#next-page').click(function(){
+    var RandomNumber1 = Math.floor(Math.random()*10).toString(); //Math.floor redondea el numero
+    var RandomNumber2 = Math.floor(Math.random() * 10).toString(); //Math.random genera el numero aleatorio
+    var RandomNumber3 = Math.floor(Math.random() * 10).toString(); //toString convierte el numero en cadena   
+    alert( 'Tu codigo es LAB-'+ RandomNumber1 + RandomNumber2 + RandomNumber3);
+    window.location.href = '../views/sign-up.html'
+
+});
+
 
 
 
