@@ -48,16 +48,4 @@ $('#next-page').click(function(){
 
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
 });

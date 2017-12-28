@@ -89,3 +89,12 @@
 .color-enabled{
   background-color: rgba(132, 42, 192, 0.842)
 }
+/* Estilos para la ventana verify-num */
+
+input {
+	width: 60px;
+  font-size: 20px;
+  border:none;
+  border-bottom: 1px solid green;
+  outline: none;
+}
