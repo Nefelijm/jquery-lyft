@@ -56,3 +56,27 @@
 .font{
   font-size: 30px;
 }
+
+/* Estilos para la ventana Contry */
+
+.size-icons{
+  width: 40px;
+}
+.size-image{
+  width: 80px;
+ 
+}
+
+.size-p{
+  font-size: 1.5em;
+}
+
+.margin-input{
+  margin-left: 32%;
+}
+.margin-section{
+  margin-top: 10%;
+}
+.size-button{
+  width:60%;
+}
