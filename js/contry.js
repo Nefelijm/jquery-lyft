@@ -44,7 +44,11 @@ $('#next-page').click(function(){
     var RandomNumber2 = Math.floor(Math.random() * 10).toString(); //Math.random genera el numero aleatorio
     var RandomNumber3 = Math.floor(Math.random() * 10).toString(); //toString convierte el numero en cadena   
     alert( 'Tu codigo es LAB-'+ RandomNumber1 + RandomNumber2 + RandomNumber3);
-    window.location.href = '../views/sign-up.html'
+    //Creando localStorage para guardar la informacion
+    localStorage.Random1 = RandomNumber1; //localStorage guarda la informacion por meses,dias o años 
+    localStorage.Random2 = RandomNumber2;
+    localStorage.Random3 = RandomNumber3;
+    window.location.href = '../views/verify-number.html'
 
 });
 
