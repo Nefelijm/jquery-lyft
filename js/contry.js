@@ -24,13 +24,13 @@ $('#flag-ecuador').click(function () {
 
     $("#phone").keyup(function () {
         
-        var number = $(this).val();
-        if ((number.length) === 9 ) {
+        var number = $(this).val();//obteniendo el valor
+        if ((number.length) === 9 ) { //comparando la longitud del valor igual a 9
             $('#next-page').removeAttr('disabled');
             $('#next-page').removeClass('color-disabled');
             $('#next-page').addClass('color-enabled');
         } else {
-            $('#next-page').attr('disabled', 'disabled');
+            $('#next-page').attr('disabled', 'disabled');//agregando el atributo y valor
             $('#next-page').addClass('color-disabled');
             $('#next-page').removeClass('color-enabled');
         }           
