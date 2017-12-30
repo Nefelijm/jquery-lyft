@@ -9,13 +9,13 @@ $('document').ready(function () {
     var verifycheck = false;
 
    function activeButton() {
-       if (verifyFirstName && verifyLastName && verifyEmail) {
+       if (verifyFirstName && verifyLastName && verifyEmail && verifycheck) {
            $('#button-form').attr('disabled',false);
        } 
     }   
         
     function desactiveButton() {
-        if (verifyFirstName && verifyLastName && verifyEmail) {
+        if (verifyFirstName && verifyLastName && verifyEmail && verifycheck) {
             $('#button-form').attr('disabled', true);
         }
     }      
@@ -70,20 +70,22 @@ $('document').ready(function () {
             
              if (($(this).prop('checked'))) {
                  
-                $('#msj4').text('acepto las condiciones')
+                $('#msj4').text('acepto las condiciones');                      
                  verifycheck = true;
                  activeButton();
                  
-                 
              } else {
-                 $('#msj4').text('no acepto');                 
+                 $('#msj4').text('no acepto');
                  desactiveButton();
              }
 
             
           });
     
-    
+    //Enviando a la Vista end-up
+    $('#button-form').click(function () {
+        window.location.href = '../views/end-up.html';
+    });
 
 
 
