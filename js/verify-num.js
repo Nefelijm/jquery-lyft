@@ -116,7 +116,9 @@ $(document).ready(function() {
             conditionNum3 = false;
         }
 
-        buttonEnabled();
+        buttonEnabled()
+        
+        ;
      });
    });
 
