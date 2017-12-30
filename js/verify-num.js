@@ -118,6 +118,10 @@ $(document).ready(function() {
 
         buttonEnabled;
     });
-
+   
+    //Enviando a la Vista del Formulario
+    $('#verify-nex').click(function () {
+        window.location.href = '../views/form.html';
+    });
     
 });
