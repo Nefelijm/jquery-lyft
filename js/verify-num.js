@@ -76,4 +76,48 @@ $(document).ready(function() {
         alert('LAB-' + Resend);
     });
 
+   //Verificando el valor del input1 si es igual al codigo de alert
+    $('#input1').val(""); //limpiando el input1
+    $("#input1").keyup(function () {
+        var number1 = (parseInt(Resend[0])).toString(); //separando nuevamente los numeros para ver si es igual al nuevo random del alert
+        if ($(this).val() === number1) {
+
+            conditionNum1 = true;
+        }
+        else {
+            conditionNum1 = false;
+        }
+        buttonEnabled;
+    });
+   
+    //Verificando el valor del input2 si es igual al codigo de alert
+    $('#input2').val("");//limpiando el input2
+    $("#input2").keyup(function () {
+        var number2 = (parseInt(Resend[1])).toString(); //separando nuevamente los numeros para ver si es igual al nuevo random del alert
+        if ($(this).val() === number2) {
+
+            conditionNum2 = true;
+        } else {
+            conditionNum2 = false;
+        }
+
+        buttonEnabled;
+
+    });
+   
+    //Verificando el valor del input3 si es igual al codigo de alert
+    $('#input3').val("");//limpiando el input3
+    $("#input3").keyup(function () {
+        var number3 = (parseInt(Resend[2])).toString(); //separando nuevamente los numeros para ver si es igual al nuevo random del alert
+        if ($(this).val() === number3) {
+
+            conditionNum3 = true;
+        } else {
+            conditionNum3 = false;
+        }
+
+        buttonEnabled;
+    });
+
+    
 });
