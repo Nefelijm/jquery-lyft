@@ -66,5 +66,14 @@ $(document).ready(function() {
         buttonEnabled;
 
     });
-   
+
+/*********************** Funcion cuando haces click en el boton Resend Code ***************/
+
+    $('#resend-code').click(function () {
+        var Resend = Random();
+    
+    //Creando alert con el nuevo random
+        alert('LAB-' + Resend);
+    });
+
 });
