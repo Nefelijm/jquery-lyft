@@ -27,18 +27,24 @@
                 <form action="/action_page.php">
                     <div class="form-group">
                         <label for="First-name">First name:</label>
-                        <input type="text" class="form-control" id="first-name">
-                        <label for="First-name">Last name:</label>
+                        <div id="msj1"></div>
+                        <input type="text" class="form-control" id="first-name" placeholder="Escribe tu nombre">
+                        
+                    </div>
+                    <div class="form-group">
+                        <label for="Last-name">Last name:</label>
+                        <div id="msj2"></div>
                         <input type="text" class="form-control" id="last-name">
                     </div>
                     <div class="form-group">
                         <label for="email">Email address:</label>
+                        <div id="msj3"></div>
                         <input type="email" class="form-control" id="email">
                     </div>
                     <div class="checkbox">
                         <label><input type="checkbox"> I agree to Lyft'ss Terms of Service </label>
                     </div>
-                    <button type="submit" class="btn btn-default">Next</button>
+                    <button type="submit" class="btn btn-default disabled">Next</button>
                 </form>
             </div>
         </div>

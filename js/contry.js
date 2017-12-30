@@ -3,22 +3,53 @@ $(document).ready(function(){
  //Funcion para que cambien las banderas
 
 $('#flag-argentina').click(function(){
-var flag = $(this).attr('src');
+ var flag = $(this).attr('src');
+ var addPeru = $('#flag-peru').attr('src');
 $('#flag-peru').attr('src', flag);
-  $('#postal').text('45');
+ $('#flag-argentina').attr('src', addPeru);  
+  
 })
 
 $('#flag-brasil').click(function () {
-  var flag = $(this).attr('src');
-  $('#flag-peru').attr('src', flag);
-    $('#postal').text('25');
+ var flag = $(this).attr('src');
+ var addPeru = $('#flag-peru').attr('src');
+  $('#flag-peru').attr('src', flag); 
+    $('#flag-brasil').attr('src', addPeru);  
+    
  });
 
 $('#flag-ecuador').click(function () {
   var flag = $(this).attr('src');
+  var addPeru = $('#flag-peru').attr('src');
   $('#flag-peru').attr('src', flag);
-    $('#postal').text('55');
+    $('#flag-ecuador').attr('src', addPeru); 
+   
 });
+    $('#flag-peru').click(function () {
+      
+        var addPeru = $('#flag-peru').attr('src');
+        $('#flag-peru').attr('src', flag);
+        
+
+    });
+
+
+    $('#flag-argentina').click(function () {       
+        $('#postal').text('54');
+    })
+
+    $('#flag-brasil').click(function () {
+        $('#postal').text('52');
+    })
+
+    $('#flag-ecuador').click(function () {
+        $('#postal').text('53');
+    })
+
+    $('#flag-peru').click(function () {
+        $('#postal').text('51');
+    })
+
 
 //Funcion para validar la cantidad de numeros ingresados y habilitar el boton nex
 

@@ -68,7 +68,8 @@
 }
 
 .size-p{
-  font-size: 1.5em;
+  font-size: 15px;
+  margin-top: 1%;
 }
 
 .margin-input{
@@ -79,6 +80,7 @@
 }
 .size-button{
   width:60%;
+  margin-top: 15%;
 }
 .margin-lag{
   margin-bottom: 10%;
@@ -89,16 +91,42 @@
 .color-enabled{
   background-color: rgba(132, 42, 192, 0.842)
 }
-/* Estilos para la ventana verify-num */
-
+#postal {
+  font-size: 1.5em;
+}
 input {
-	width: 60px;
+	width: 150px;
   font-size: 20px;
   border:none;
-  border-bottom: 1px solid green;
+  border-bottom: 6px solid green;
   outline: none;
+  
 }
+/* Estilos para la ventana verify-num */
 
+.input-number {
+	width: 30px;
+  font-size: 20px;
+  border:none;
+  border-bottom: 6px solid rgb(113, 6, 122);
+  outline: none; 
+ 
+}
+/* Codigo para desaparecer los botones de un input tipo number */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+input[type=number] { -moz-appearance:textfield; }
+
+.margin-input{
+  margin-left: 40%;
+  margin-top: 5%; 
+}
+.margin-button{
+  margin-top: 15%;
+}
 /* Estilos para la ventana end-up */
 .end-img{
   width: 170px;
