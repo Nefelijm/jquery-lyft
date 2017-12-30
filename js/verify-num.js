@@ -37,7 +37,7 @@ $(document).ready(function() {
         else {
             conditionNum1 = false;
         }
-        buttonEnabled;
+        buttonEnabled();
 
     });
 
@@ -50,7 +50,7 @@ $(document).ready(function() {
         else {
             conditionNum2 = false;
         }
-        buttonEnabled;
+        buttonEnabled();
 
     });
 
@@ -63,7 +63,7 @@ $(document).ready(function() {
         else {
             conditionNum3 = false;
         }
-        buttonEnabled;
+        buttonEnabled();
 
     });
 
@@ -74,7 +74,7 @@ $(document).ready(function() {
     
     //Creando alert con el nuevo random
         alert('LAB-' + Resend);
-    });
+    
 
    //Verificando el valor del input1 si es igual al codigo de alert
     $('#input1').val(""); //limpiando el input1
@@ -87,7 +87,7 @@ $(document).ready(function() {
         else {
             conditionNum1 = false;
         }
-        buttonEnabled;
+        buttonEnabled();
     });
    
     //Verificando el valor del input2 si es igual al codigo de alert
@@ -101,7 +101,7 @@ $(document).ready(function() {
             conditionNum2 = false;
         }
 
-        buttonEnabled;
+        buttonEnabled();
 
     });
    
@@ -116,9 +116,10 @@ $(document).ready(function() {
             conditionNum3 = false;
         }
 
-        buttonEnabled;
-    });
-   
+        buttonEnabled();
+     });
+   });
+
     //Enviando a la Vista del Formulario
     $('#verify-nex').click(function () {
         window.location.href = '../views/form.html';
