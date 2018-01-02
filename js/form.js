@@ -84,12 +84,13 @@ $('document').ready(function () {
     
     //Enviando a la Vista end-up
     $('#button-form').click(function () {
-        window.location.href = '../views/end-up.html';
+        event.preventDefault();
+        window.location.href = '../views/endUp.html';
     });
 
 
 
-
+    
 
 
 
