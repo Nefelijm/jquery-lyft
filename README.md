@@ -1,13 +1,15 @@
-#LYFT
-NEFELI JOÑORUCO MORALES
-##Objetivos
+*LYFT
 
-###Desarrolla una web-app que replique el sitio de Lyft, en este reto deberás cumplir los pasos necesarios para que tu usuario pueda registrarse
+NEFELI JOÑORUCO MORALES
+
+**Objetivos
+
+***Desarrolla una web-app que replique el sitio de Lyft, en este reto deberás cumplir los pasos necesarios para que tu usuario pueda registrarse
 
 ###FUNCIONALIDAD PARA LAS VISTAS
 
 1.Se muestra la vista de de carga por cinco segundo.
-![recursos](../assets/img1.png);
+![recursos](assets/img1.png);
 2.Se muestra la pantalla principal con dos opciones. Elegimos SING UP
 ![recursos](../assets/img2.png);
 3.En esta vista se nos da la opcion de elegir una de las banderas.
