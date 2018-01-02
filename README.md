@@ -8,12 +8,17 @@ NEFELI JOÑORUCO MORALES
 
 ****FUNCIONALIDAD PARA LAS VISTAS
 
-1.Se muestra la vista de de carga por cinco segundo.
-![recursos](assets/img1.png);
+1.Se muestra la vista de carga por cinco segundo
+
+![recursos](assets/img1.png)
+____________________________________________________________________________
+
 2.Se muestra la pantalla principal con dos opciones. Elegimos SING UP
-![recursos](assets/img2.png);
+
+![recursos](assets/img2.png)
+____________________________________________________________________________
 3.En esta vista se nos da la opcion de elegir una de las banderas.
-![recursos](assets/img3.png);
+![recursos](assets/img3.png)
 4.Al elejir la bandera del pais deseado el codigo postal cambia.
 ![recursos](assets/img4.png);
 5.Al ingresar 9 digitos el input se activara. Poniendose de color amarillo
