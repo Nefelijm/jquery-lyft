@@ -58,13 +58,14 @@
 }
 
 /* Estilos para la ventana Contry */
+
 .purple{
-  background: linear-gradient( rgb(193, 152, 199) 65%, rgb(228, 10, 138));
-  height: 100vh;
+ background: linear-gradient( rgb(171, 137, 177) 65%, rgb(223, 17, 255));
+ height: 100vh;
 }
 .size-icons{
   width: 40px;
-  margin-top:45%; 
+  margin-top: 35%;
 }
 .size-image{
   width: 80px;
@@ -72,22 +73,23 @@
 }
 
 .size-p{
-  font-size: 18px;
+  font-size: 20px;
   margin-top: 5%;
-  margin-left: 15%;
+  margin-left:20%;
 }
 
 .margin-input{
   margin-left: 32%;
 }
 .margin-section{
-  margin-top: 10%;
+  margin-top: 15%;
 }
 .size-button{
   width:60%;
-  margin-top: 15%;
   border: 2px solid black;
-  font-size: 20px;
+  border-radius:5%;
+  margin-top: 5%;
+  font-size:30px; 
 }
 .margin-lag{
   margin-bottom: 10%;
@@ -116,8 +118,10 @@ input {
   font-size: 20px;
   border:none;
   border-bottom: 6px solid rgb(113, 6, 122);
-  outline: none; 
- 
+  outline: none;  
+}
+.margin-p{
+  margin-left: 0%;
 }
 /* Codigo para desaparecer los botones de un input tipo number */
 input[type=number]::-webkit-inner-spin-button, 
@@ -133,7 +137,18 @@ input[type=number] { -moz-appearance:textfield; }
 }
 .margin-button{
   margin-top: 15%;
+  border: 3px solid gray;
+  font-size: 30px;
+  background: rgb(240, 126, 126);
 }
+
+/* Estilos para la ventana form*/
+#msj1 , #msj2 , #msj3 , #msj4 {
+background-color:aqua;
+font-size: 15px;
+color: black;
+}
+
 /* Estilos para la ventana end-up */
 .end-img{
   width: 170px;
