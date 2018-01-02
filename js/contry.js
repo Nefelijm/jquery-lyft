@@ -1,86 +1,59 @@
-$(document).ready(function(){
+$(document).ready(function() {
+  // Funcion para que cambien las banderas
 
- //Funcion para que cambien las banderas
+  $('#flag-argentina').click(function() {
+    var flag = $(this).attr('src');
+    var addPeru = $('#flag-peru').attr('src');
+    $('#flag-peru').attr('src', flag);
+    $('#flag-argentina').attr('src', addPeru);
+    $('#postal').text('54');
+  });
 
-$('#flag-argentina').click(function(){
- var flag = $(this).attr('src');
- var addPeru = $('#flag-peru').attr('src');
-$('#flag-peru').attr('src', flag);
- $('#flag-argentina').attr('src', addPeru);  
-  
-})
+  $('#flag-brasil').click(function() {
+    var flag = $(this).attr('src');
+    var addPeru = $('#flag-peru').attr('src');
+    $('#flag-peru').attr('src', flag); 
+    $('#flag-brasil').attr('src', addPeru);
+  });
 
-$('#flag-brasil').click(function () {
- var flag = $(this).attr('src');
- var addPeru = $('#flag-peru').attr('src');
-  $('#flag-peru').attr('src', flag); 
-    $('#flag-brasil').attr('src', addPeru);  
-    
- });
-
-$('#flag-ecuador').click(function () {
-  var flag = $(this).attr('src');
-  var addPeru = $('#flag-peru').attr('src');
-  $('#flag-peru').attr('src', flag);
-    $('#flag-ecuador').attr('src', addPeru); 
-   
-});
-    $('#flag-peru').click(function () {
-      
-        var addPeru = $('#flag-peru').attr('src');
-        $('#flag-peru').attr('src', flag);
-        
-
-    });
+  $('#flag-ecuador').click(function() {
+    var flag = $(this).attr('src');
+    var addPeru = $('#flag-peru').attr('src');
+    $('#flag-peru').attr('src', flag);
+    $('#flag-ecuador').attr('src', addPeru);
+  });
+  $('#flag-peru').click(function() {
+    var addPeru = $('#flag-peru').attr('src');
+    $('#flag-peru').attr('src', flag);
+  });
 
 
-    $('#flag-argentina').click(function () {       
-        $('#postal').text('54');
-    })
+  // Funcion para validar la cantidad de numeros ingresados y habilitar el boton nex
 
-    $('#flag-brasil').click(function () {
-        $('#postal').text('52');
-    })
+  $('#phone').keyup(function() {
+    var number = $(this).val();// obteniendo el valor
+    if ((number.length) === 9) { // comparando la longitud del valor igual a 9
+      $('#next-page').removeAttr('disabled');
+      $('#next-page').removeClass('color-disabled');
+      $('#next-page').addClass('color-enabled');
+    } else {
+      $('#next-page').attr('disabled', 'disabled');// agregando el atributo y valor
+      $('#next-page').addClass('color-disabled');
+      $('#next-page').removeClass('color-enabled');
+    }
+  });
 
-    $('#flag-ecuador').click(function () {
-        $('#postal').text('53');
-    })
+  // Funcionalidad para generar codigo aleatorio
 
-    $('#flag-peru').click(function () {
-        $('#postal').text('51');
-    })
-
-
-//Funcion para validar la cantidad de numeros ingresados y habilitar el boton nex
-
-    $("#phone").keyup(function () {
-        
-        var number = $(this).val();//obteniendo el valor
-        if ((number.length) === 9 ) { //comparando la longitud del valor igual a 9
-            $('#next-page').removeAttr('disabled');
-            $('#next-page').removeClass('color-disabled');
-            $('#next-page').addClass('color-enabled');
-        } else {
-            $('#next-page').attr('disabled', 'disabled');//agregando el atributo y valor
-            $('#next-page').addClass('color-disabled');
-            $('#next-page').removeClass('color-enabled');
-        }           
-
-    });
-
-//Funcionalidad para generar codigo aleatorio
-
-$('#next-page').click(function(){
-    var RandomNumber1 = Math.floor(Math.random()*10).toString(); //Math.floor redondea el numero
-    var RandomNumber2 = Math.floor(Math.random() * 10).toString(); //Math.random genera el numero aleatorio
-    var RandomNumber3 = Math.floor(Math.random() * 10).toString(); //toString convierte el numero en cadena   
-    alert( 'Tu codigo es LAB-'+ RandomNumber1 + RandomNumber2 + RandomNumber3);
-    //Creando localStorage para guardar la informacion
-    localStorage.Random1 = RandomNumber1; //localStorage guarda la informacion por meses,dias o años 
+  $('#next-page').click(function() {
+    var RandomNumber1 = Math.floor(Math.random() * 10).toString(); // Math.floor redondea el numero
+    var RandomNumber2 = Math.floor(Math.random() * 10).toString(); // Math.random genera el numero aleatorio
+    var RandomNumber3 = Math.floor(Math.random() * 10).toString(); // toString convierte el numero en cadena   
+    alert('Tu codigo es LAB-' + RandomNumber1 + RandomNumber2 + RandomNumber3);
+    // Creando localStorage para guardar la informacion
+    localStorage.Random1 = RandomNumber1; // localStorage guarda la informacion por meses,dias o años 
     localStorage.Random2 = RandomNumber2;
     localStorage.Random3 = RandomNumber3;
-    window.location.href = '../views/verify-number.html'
-
-});
-
+    window.location.href = '../views/verify-number.html';
+  });
 });
